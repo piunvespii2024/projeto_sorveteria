@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
+<meta charset="utf-8">
 <title>Sorveteria Maranata - Logon de usuário</title>
-
-<meta charset="UTF-8">
+	
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	
 <!-- Latest compiled and minified CSS -->
@@ -42,18 +42,34 @@
 	
 		<div class="row">
 		
-			<div class="col-sm-4 col-sm-offset-4 text-center">
+			<div class="col-sm-4 col-sm-offset-4">
 				
-				<h2>Usuário ou senha incorreto!!</h2>
+				<h2>Digite o email cadastrado na loja</h2>
 				
-				<a href="formLogon.php" class="btn btn-block btn-default" role="button">Tentar Novamente</a>
-					<a href="formUsuario.php">
-				<button type="button" class="btn btn-lg btn-link">
-
+				<form method="post" action="enviarEmail.php" name="logon">
+				
+					<div class="form-group">
+				
+						<input name="email" type="email" class="form-control" required id="email">
+					</div>
+				
+				
+							
+				<button type="submit" class="btn btn-lg btn-default">
+					
+					<span class="glyphicon glyphicon-envelope"> Enviar</span>
+					
+				</button>
+				
+				</form>
+				
+				<a href="formUsuario.php">
+				<button type="submit" class="btn btn-lg btn-link">
+					
 					Ainda não sou cadastrado
 					
 				</button>
-  					 </a>			
+				</a>
 			</div>
 		</div>
 	</div>
@@ -65,3 +81,4 @@
 	
 </body>
 </html>
+

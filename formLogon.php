@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-</title>Sorveteria Maranata - Logon de usuario</title>
 
+</title>Sorveteria Maranata - Logon de usuário</title>
 
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	
 <!-- Latest compiled and minified CSS -->
@@ -19,7 +19,7 @@
 <style>
 
 .navbar{
-	margin-bottom: 0;
+	margin-block-end: 0;
 }
 	
 	
@@ -44,7 +44,7 @@
 		
 			<div class="col-sm-4 col-sm-offset-4">
 				
-				<h2>Logon de Usuario</h2>
+				<h2>Logon de Usuário</h2>
 
                                  <form method="post" action="validaUsuario.php" name="logon">
 
@@ -67,13 +67,22 @@
 					
 				</button>
 				</form>
-				
+				   <a href="formUsuario.php">
 				<button type="submit" class="btn btn-lg btn-link">
 					
-					Ainda nao sou cadastrado
+					Ainda não sou cadastrado
 					
 				</button>
-							
+				    </a>
+					
+					<a href="esqueciSenha.php">
+				<button type="submit" class="btn btn-lg btn-link">
+					
+					Esqueci minha senha
+					
+				</button>
+				    </a>
+
 			</div>
 		</div>
 	</div>
