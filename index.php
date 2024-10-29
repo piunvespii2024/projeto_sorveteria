@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -16,7 +16,7 @@
     
     <style>
             .navbar{
-               margin-bottom: 0;
+               margin-block-end: 0;
             }
 
     </style>
@@ -43,7 +43,7 @@
     ?>
       <div class="col-sm-3">
          
-         <img src="upload/<?php echo $exibir['foto1'];?>" class="img-responsive" style="width:100%">
+         <img src="upload/<?php echo $exibir['foto1'];?>" class="img-responsive" style="inline-size:100%">
          
          <div><h1><?php echo mb_strimwidth($exibir['nome'],0,22,'...');?></h1></div>
          <div><h4>R$ <?php echo number_format($exibir['preco'],2,',','.'); ?></h4></div>
@@ -53,7 +53,7 @@
       </button>
       </div>
       
-      <div class="text-center" style="margin-top:5px;">
+      <div class="text-center" style="margin-block-start:5px;">
       <?php if ($exibir['quantidade']>0) {?>
       <button class="btn btn-lg btn-block btn-success">
       <span class="glyphicon glyphicon-usd">Comprar</span>
