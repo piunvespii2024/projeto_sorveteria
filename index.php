@@ -28,9 +28,11 @@
        <?php
 
            session_start();
+
            include 'conexao.php';
            include 'nav.php';
            include 'cabecalho.html';
+
            $consulta = $conexao->query('SELECT * FROM produtos');
 
        ?>
@@ -48,9 +50,10 @@
          <div><h1><?php echo mb_strimwidth($exibir['nome'],0,22,'...');?></h1></div>
          <div><h4>R$ <?php echo number_format($exibir['preco'],2,',','.'); ?></h4></div>
       <div class="text-center">
+      <a href="detalhes.php?id=<?php echo $exibir['id'];?>">
       <button class="btn btn-lg btn-block btn-info">
       <span class="glyphicon glyphicon-info-sign">Detalhes</span>
-      </button>
+      </button> </a>
       </div>
       
       <div class="text-center" style="margin-block-start:5px;">
