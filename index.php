@@ -28,9 +28,11 @@
        <?php
 
            session_start();
+
            include 'conexao.php';
            include 'nav.php';
            include 'cabecalho.html';
+
            $consulta = $conexao->query('SELECT * FROM produtos');
 
        ?>
@@ -45,19 +47,26 @@
          
          <img src="upload/<?php echo $exibir['foto1'];?>" class="img-responsive" style="inline-size:100%">
          
-         <div><h1><?php echo mb_strimwidth($exibir['nome'],0,22,'...');?></h1></div>
+         <div><h1><?php echo mb_strimwidth($exibir['produto'],0,22,'...');?></h1></div>
          <div><h4>R$ <?php echo number_format($exibir['preco'],2,',','.'); ?></h4></div>
       <div class="text-center">
+      <a href="detalhes.php?id=<?php echo $exibir['id'];?>">
       <button class="btn btn-lg btn-block btn-info">
       <span class="glyphicon glyphicon-info-sign">Detalhes</span>
-      </button>
+      </button> </a>
       </div>
       
       <div class="text-center" style="margin-block-start:5px;">
       <?php if ($exibir['quantidade']>0) {?>
+
+    
+      <a href="carrinho.php?id=<?php $exibir['id'];?>">
       <button class="btn btn-lg btn-block btn-success">
       <span class="glyphicon glyphicon-usd">Comprar</span>
       </button>
+
+      </a>
+
       <?php } else { ?>
       <button class="btn btn-lg btn-block btn-danger" disabled>
       <span class="glyphicon glyphicon-ban-circle"> Indisponivel</span>
