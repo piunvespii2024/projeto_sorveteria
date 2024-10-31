@@ -19,42 +19,44 @@
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle"data-toggle="dropdown" role="button" aria-expanded="false">Mais sabores... <span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                              <li><a href="#">Morango</a>
+                              <li><a href="busca.php?busca=morango">Morango</a>
                               </li>
-                              <li><a href="#">Ninho Trunfado</a>
+                              <li><a href="busca.php?busca=ninho_trufado">Ninho Trufado</a>
                               </li>
-                              <li><a href="#">Flocos</a>
+                              <li><a href="busca.php?busca=flocos">Flocos</a>
                               </li>
                               <li class="divider"></li>
-                              <li><a href="#">Abacaxi ao vinho</a>
+                              <li><a href="busca.php?busca=abacaxi_ao_vinho">Abacaxi ao vinho</a>
                               </li>
 
-                              <li><a href="#">Chocolate</a>
+                              <li><a href="busca.php?busca=chocolate">Chocolate</a>
                               </li>
                               
-                              <li><a href="#">Morango</a>
+                              <li><a href="busca.php?busca=morango">Morango</a>
                               </li>
-                              <li><a href="#">Ninho Trunfado</a>
+                              <li><a href="busca.php?busca=ninho_trufado">Ninho Trufado</a>
                               </li>
-                              <li><a href="#">Flocos</a>
+                              <li><a href="busca.php?busca=flocos">Flocos</a>
                               </li>
                               <li class="divider"></li>
-                              <li><a href="#">Abacaxi ao vinho</a>
+                              <li><a href="busca.php?busca=abacaxi_ao_vinho">Abacaxi ao vinho</a>
                               </li>
 
-                              <li><a href="#">Chocolate</a>
+                              <li><a href="busca.php?busca=chocolate">Chocolate</a>
                               </li>
 
                           </ul>
                          </li>
                   </ul>
-                  <form class="navbar-form navbar-left" role="search".
+                  <form method="get" action="busca.php" class="navbar-form navbar-left" role="search">
                        <div class="form-group">
-                           <input type="text" class="form-control" placeholder="Buscar">
+                       
+                           <input type="text" class="form-control" name="busca" placeholder="Buscar">
+                      </div>
                            <button type="submit" class="btn btn-default">Buscar</button>
 
+                        </form>
 
-                  </form>
                   <ul class="nav navbar-nav navbar-right">
                      <li><a href="#">Contato</a>
                      </li>

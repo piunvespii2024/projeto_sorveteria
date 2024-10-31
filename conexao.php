@@ -8,7 +8,7 @@
 
       }catch (PDOException $e){
 
-        echo 'Erro na conexão:' .$e->getMessage().'<br>';
-        echo 'Código do erro:' .$e->getCode();
+        echo 'Erro na conexÃ£oo:' .$e->getMessage().'<br>';
+        echo 'CÃ³digo do erro:' .$e->getCode();
       }
  ?>
