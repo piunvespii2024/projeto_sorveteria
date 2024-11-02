@@ -24,14 +24,14 @@ if ($consulta->rowCount() == 0) {
     $mail->Port = 587; // Porta do servidor
     $mail->SMTPSecure = 'tls'; // Tipo de segurança
     $mail->SMTPAuth = true; // Autenticação SMTP
-    $mail->Username = "univespcursos@gmail.com
+    $mail->Username = "email@gmail.com
 "; // Seu email do Gmail
-    $mail->Password = "Sedex#2024$,"; // Sua senha do Gmail
+    $mail->Password = "senha"; // Sua senha do Gmail
 
     // Configurações do email
-    $mail->setFrom('univespcursos@gmail.com
+    $mail->setFrom('emails@gmail.com
 ', 'Sorveteria Maranata');
-    $mail->addReplyTo('univespcursos@gmail.com
+    $mail->addReplyTo('email@gmail.com
 ', 'Sorveteria Maranata');
     $mail->addAddress($recebe_email, $recebe_nome);
     $mail->Subject = 'Recuperação de Senha || Sorveteria Maranata';
