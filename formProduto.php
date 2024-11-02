@@ -8,6 +8,7 @@
 	
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -102,10 +103,10 @@ $('#preco').mask('000.000.000.000.000,00', {reverse: true});
 					<label for="departamento">Departamento</label>
 					
 					<select class="form-control" name="departamento">
-					  <option value="VIDEO">VÍDEO</option>
-					  <option value="AUDIO">AUDIO</option>
-					  <option value="INFORMÁTICA">INFORMÁTICA</option>
-					  <option value="OUTROS">OUTROS</option>
+					  <option value="MASSA">massa</option>
+					  <option value="PALITO">palito</option>
+					  <option value="POTE">pote</option>
+					  <option value="OUTROS">outros</option>
 					</select>
 
 					</div>
@@ -116,9 +117,11 @@ $('#preco').mask('000.000.000.000.000,00', {reverse: true});
 					<label for="secao">Seção</label>
 					
 					<select class="form-control" name="secao">
-					  <option value="TV">TV</option>
-					  <option value="DOCK STATION">DOCK STATION</option>
-					  <option value="FONE">FONE</option>
+					  <option value="MORANGO">morango</option>
+					  <option value="ABACAXI AO VINHO">abacaxi ao vinho</option>
+					  <option value="CHOCOLATE">CHOCOLATE</option>
+					  <option value="NINHO_TRUFADO">Ninho Trufado</option>
+					  <option value="REFRIGERANTE">refrigente</option>
 					  <option value="OUTROS">OUTROS</option>
 					</select>
 						

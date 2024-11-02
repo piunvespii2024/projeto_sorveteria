@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Gestao de sorveteria</title>
+<title>Sorveteria Maranata</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Latest compiled and minified CSS -->
@@ -13,6 +13,11 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
     
     <style>
             .navbar{
@@ -60,7 +65,7 @@
       <?php if ($exibir['quantidade']>0) {?>
 
     
-      <a href="carrinho.php?id=<?php $exibir['id'];?>">
+      <a href="carrinho.php?id=<?php echo $exibir['id'];?>">
       <button class="btn btn-lg btn-block btn-success">
       <span class="glyphicon glyphicon-usd">Comprar</span>
       </button>

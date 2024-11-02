@@ -9,6 +9,8 @@
 	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -103,7 +105,26 @@
 		<p>R$ <?php echo number_format($exibir['preco'],2,',','.'); ?></p>
 			 
 			 
-		<button class="btn btn-lg btn-success">Comprar</button>
+		
+		</button> </a>
+      </div>
+      
+      <div class="text-center" style="margin-block-start:0px;">
+      <?php if ($exibir['quantidade']>0) {?>
+
+    
+      <a href="carrinho.php?id=<?php echo $exibir['id'];?>">
+      <button class="btn btn-lg btn-block btn-success">
+      <span class="glyphicon glyphicon-usd">Comprar</span>
+      </button>
+
+      </a>
+
+      <?php } else { ?>
+      <button class="btn btn-lg btn-block btn-danger" disabled>
+      <span class="glyphicon glyphicon-ban-circle"> Indisponivel</span>
+      </button>
+      <?php } ?>
 				
 		</div>		
 	

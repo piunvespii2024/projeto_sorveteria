@@ -9,6 +9,8 @@
 	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -18,7 +20,7 @@
 	<style>
 	
 	.navbar{
-		margin-bottom: 0;
+		margin-block-end: 0;
 	}
 	
 	
@@ -82,14 +84,19 @@
 	?>
 	
 	
-	<div class="row text-center" style="margin-top: 15px;">
+	<div class="row text-center" style="margin-block-start: 15px;">
 		<h1>Total: R$ <?php echo number_format($total,2,',','.'); ?> </h1>
 	</div>
 	
 	
-	<div class="row text-center" style="margin-top: 15px;">
-		<a href="index.php"><button class="btn btn-lg btn-primary">Continuar Comprando</button></a>
-		<a href="finalizarCompra.php"><button class="btn btn-lg btn-success">Finalizar Compra</button></a>
+	<div class="row text-center" style="margin-block-start: 15px;">	
+	<a href="index.php"><button class="btn btn-lg btn-primary">Continuar Comprando</button></a>
+	
+	<?php if (count($_SESSION['carrinho'])>0) { ?>
+	
+	<a href="finalizarCompra.php"><button class="btn btn-lg btn-success">Finalizar Compra</button></a>
+
+	<?php } ?>
 	</div>
 
 	

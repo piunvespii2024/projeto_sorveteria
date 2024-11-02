@@ -7,7 +7,7 @@
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#"><img src="https://placehold.it/30x30"></a>
+                  <a class="navbar-brand" href="index.php"><img src="images/icon.jpg"></a>
              </div>
              
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -58,6 +58,11 @@
                         </form>
 
                   <ul class="nav navbar-nav navbar-right">
+
+                  <li>
+                    <a href="carrinho.php"><span class="glyphicon glyphicon-shopping-cart"></span> Carrinho</a>
+                  </li>        
+
                      <li><a href="#">Contato</a>
                      </li>
 
@@ -81,7 +86,7 @@
 
                           ?>
                           
-                          <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $exibe_user['nome'];?> </a></li>
+                          <li><a href="areaUser.php"><span class="glyphicon glyphicon-user"></span> <?php echo $exibe_user['nome'];?> </a></li>
                           <li><a href="sair.php"><span class="glyphicon glyphicon-off"></span>Sair</a></li>
 
                            <?php } else {  ?>

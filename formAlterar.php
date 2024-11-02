@@ -89,14 +89,14 @@ $('#preco').mask('000.000.000.000.000,00', {reverse: true});
 				<div class="form-group">
 					
 					
-					<label for="marca">Marca</label>
+					<label for="marca">VARIEDADES</label>
 					
 					<select class="form-control" name="marca">
-					  <option value="SAMSUNG" <?=($exibe['marca'] == 'SAMSUNG')?'selected':''?>>SAMSUNG</option>
-					  <option value="LG" <?=($exibe['marca'] == 'LG')?'selected':''?>>LG</option>
-					  <option value="APPLE" <?=($exibe['marca'] == 'APPLE')?'selected':''?>>APPLE</option>
-					  <option value="DELL" <?=($exibe['marca'] == 'DELL')?'selected':''?>>DELL</option>
-					  <option value="JBL" <?=($exibe['marca'] == 'JBL')?'selected':''?>>JBL</option>
+					  <option value="Pote" <?=($exibe['marca'] == 'pote')?'selected':''?>>POTE</option>
+					  <option value="Palito" <?=($exibe['marca'] == 'palito')?'selected':''?>>PALITO</option>
+					  <option value="Massa" <?=($exibe['marca'] == 'massa')?'selected':''?>>MASSA</option>
+					  <option value="Acai" <?=($exibe['marca'] == 'Açaí')?'selected':''?>>AÇAÍ</option>
+					  <option value="Refrigerante" <?=($exibe['marca'] == 'refrigerante')?'selected':''?>>REFRIGERANTE</option>
 					   <option value="OUTROS" <?=($exibe['marca'] == 'OUTROS')?'selected':''?>>OUTROS</option>
 					</select>
 
@@ -107,12 +107,12 @@ $('#preco').mask('000.000.000.000.000,00', {reverse: true});
 					
 					<div class="form-group">
 				
-					<label for="departamento">Departamento</label>
+					<label for="departamento">EMBALAGEM</label>
 					
 					<select class="form-control" name="departamento">
-					  <option value="VIDEO" <?=($exibe['departamento'] == 'VÍDEO')?'selected':''?>>VÍDEO</option>
-					  <option value="AUDIO" <?=($exibe['departamento'] == 'AUDIO')?'selected':''?>>AUDIO</option>
-					  <option value="INFORMÁTICA" <?=($exibe['departamento'] == 'INFORMÁTICA')?'selected':''?>>INFORMÁTICA</option>
+					  <option value="CASQUINHA" <?=($exibe['departamento'] == 'CASQUINHA')?'selected':''?>>CASQUINHA</option>
+					  <option value="TIGELA DE PLASTICO" <?=($exibe['departamento'] == 'TIGELA DE PLÁTICO')?'selected':''?>>TIGELA DE PLASTICO</option>
+					  <option value="BARCA" <?=($exibe['departamento'] == 'BARCA')?'selected':''?>>BARCA</option>
 					  <option value="OUTROS" <?=($exibe['departamento'] == 'OUTROS')?'selected':''?>>OUTROS</option>
 					</select>
 
@@ -124,9 +124,9 @@ $('#preco').mask('000.000.000.000.000,00', {reverse: true});
 					<label for="secao">Seção</label>
 					
 					<select class="form-control" name="secao">
-					  <option value="TV" <?=($exibe['secao'] == 'TV')?'selected':''?>>TV</option>
-					  <option value="DOCK STATION" <?=($exibe['secao'] == 'DOCK STATION')?'selected':''?>>DOCK STATION</option>
-					  <option value="FONE" <?=($exibe['secao'] == 'FONE')?'selected':''?>>FONE</option>
+					  <option value="MORANGO" <?=($exibe['secao'] == 'MORANGO')?'selected':''?>>MORANGO</option>
+					  <option value="CHOCOLATE" <?=($exibe['secao'] == 'CHOCOLATE')?'selected':''?>>CHOCOLATE</option>
+					  <option value="NINHO_TRUFADO" <?=($exibe['secao'] == 'NINHO_TRUFADO')?'selected':''?>>NINHO TRUFADO</option>
 					  <option value="OUTROS" <?=($exibe['secao'] == 'OUTROS')?'selected':''?>>OUTROS</option>
 					</select>
 						

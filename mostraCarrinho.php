@@ -1,11 +1,17 @@
 <div class="container-fluid">
 	
-	<div class="row text-center" style="margin-top: 15px;">
+	<div class="row text-center" style="margin-block-start: 15px;">
 		<h1>Carrinho de Compras</h1>
 	</div>
 	
 	
 	<?php
+
+	if (!isset($_SESSION['carrinho'])){
+
+		$_SESSION['carrinho'] = array();
+
+	}
 	
 	$total = null;
     foreach ($_SESSION['carrinho'] as $id => $qnt)  {
@@ -21,7 +27,7 @@
 	
 	
 	
-	<div class="row" style="margin-top: 15px;">
+	<div class="row" style="margin-block-start: 15px;">
 		
 		
 		
@@ -31,18 +37,18 @@
 		
 		
 		<div class="col-sm-4">
-			<h4 style="padding-top:20px"><?php echo $produto; ?></h4>
+			<h4 style="padding-block-start:20px"><?php echo $produto; ?></h4>
 		</div>	
 		
 		
 		<div class="col-sm-2">
-			<h4 style="padding-top:20px">R$ <?php echo $preco; ?></h4>
+			<h4 style="padding-block-start:20px">R$ <?php echo $preco; ?></h4>
 		</div>		
-		<div class="col-sm-2" style="padding-top:20px">
+		<div class="col-sm-2" style="padding-block-start:20px">
 			<h4><?php echo $qnt; ?> </h4>
 		</div>
 		
-		<div class="col-sm-1 col-xs-offset-right-1" style="padding-top:20px">
+		<div class="col-sm-1 col-xs-offset-right-1" style="padding-block-start:20px">
 		
 		<a href="removeCarrinho.php?id=<?php echo $id;?>">	
 		<button class="btn btn-lg btn-block btn-danger">
@@ -54,4 +60,4 @@
 	</div>	
 	
 	
-	<?php } ?>>
+	<?php } ?>

@@ -8,8 +8,6 @@
 	
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -32,6 +30,7 @@
 <body>
 	
 <?php
+
 	
 	include 'conexao.php';	
 	include 'nav.php';
@@ -46,11 +45,9 @@
 		
 			<div class="col-sm-4 col-sm-offset-4 text-center">
 				
-				<h2>Email já em uso na Loja!!!</h2>
-				
-				<a href="formUsuario.php" class="btn btn-block btn-info" role="button">Tentar Novamente</a>
-				
-				<a href="esqueciSenha.php" class="btn btn-block btn-primary" role="button">Esqueci a senha</a>
+				<h2>Sua compra foi realizada com sucesso!! Seu número
+                    de registro é: <?php echo $ticket ?>
+                </h2>
 				
 							
 			</div>
