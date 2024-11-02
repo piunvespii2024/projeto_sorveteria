@@ -26,7 +26,7 @@ if ($consulta->rowCount() == 0) {
     $mail->SMTPAuth = true; // Autenticação SMTP
     $mail->Username = "univespcursos@gmail.com
 "; // Seu email do Gmail
-    $mail->Password = "Sedex#2024$,"; // Sua senha do Gmail
+    $mail->Password = "*******"; // Sua senha do Gmail
 
     // Configurações do email
     $mail->setFrom('univespcursos@gmail.com
